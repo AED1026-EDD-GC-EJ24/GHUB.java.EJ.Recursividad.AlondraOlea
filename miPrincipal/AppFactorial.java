@@ -1,26 +1,31 @@
 package miPrincipal;
 class AppFactorial{
-    public static void main(String[] args) {
+    public static void menu() {
         //Calcular factorial de un numero
+        System.out.println("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        System.out.println("           FACTORIAL           ");
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
         int f = 5;
-        System.out.println("Factorial del " + f + "! = " +  factorialIte(f));
+        System.out.println("\n~~~~ Version Iterativa ~~~~ ");
+        System.out.println("Factorial del " + f + "! = " +  factorialIte(f)) ;
+        System.out.println("~~~~ Version Recursiva ~~~~ ");
+        System.out.println("Factorial del " + f + "! = " +  factorialRecu(f));
     }
 
     public static long factorialIte(int n){
          //VERSION ITERATIVA
-        int f = 5;
         long fact = 1;
 
-        for (int i = f; i > 0; i--) {
-            fact = fact *i;;
+        for (int i = n; i > 0; i--) {
+            fact = fact * i;
         }
         return fact;
     }
     public static long factorialRecu(int n){
 
-        if(f == 0)
+        if(n == 0)
             return 1;
         else
-            return factorialRecu(f-1) * f;
+            return factorialRecu(n-1) * n;
     }
 }
