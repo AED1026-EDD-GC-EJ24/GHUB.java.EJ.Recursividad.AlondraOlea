@@ -1,6 +1,11 @@
+./miPrincipal/AppAlfabeto.java
 ./miPrincipal/Principal.java
+./miPrincipal/AppHanoi.java
 ./miPrincipal/AppLadrillos.java
 ./miPrincipal/AppSumaDigitos.java
 ./miPrincipal/AppFactorial.java
+./miPrincipal/AppFibRecursivode40a50.java
+./miPrincipal/AppFibonacci.java
+./miPrincipal/Performance.java
 ./miPrincipal/AppNaturales.java
 ./miTest/AppTest.java
