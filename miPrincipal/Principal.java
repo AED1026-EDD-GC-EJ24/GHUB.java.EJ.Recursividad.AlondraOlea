@@ -15,14 +15,15 @@ public class Principal {
             System.out.println("2) Factorial");
             System.out.println("3) Números Naturales");
             System.out.println("4) Suma Dígitos");
-            System.out.println("5) Recursividad Indirecta");
+            System.out.println("5) Recursividad Indirecta"); 
             System.out.println("6) Máximo Común Divisor");
             System.out.println("7) Búsqueda Binaria");
             System.out.println("8) Ordenamiento Selección");
             System.out.println("9) Torres de Hanoi");
             System.out.println("10) Serie de Fibonacci");
             System.out.println("11) Performance Serie Fibonacci");
-            System.out.println("12) Ordenación por Mezclas");
+            System.out.println("12) Performance Optimizado");
+            System.out.println("13) Ordenación por Mezclas");
             System.out.println("");
             System.out.println("0) Salir");
             System.out.print("Selecciona opción:");
@@ -40,6 +41,25 @@ public class Principal {
                break;
             case 4:
                AppSumaDigitos.menu();
+               break;
+            case 5:
+               break;
+            case 6:
+               break;
+            case 7:
+               break;
+            case 8:
+               break;
+            case 9:
+               break;
+            case 10:
+               break;
+            case 11:
+               break;
+            case 12:
+            AppFibRecursivoOptimizado.menu();
+               break;
+            case 13:
                break;
             case 0:
                System.out.println("ADIOS!");

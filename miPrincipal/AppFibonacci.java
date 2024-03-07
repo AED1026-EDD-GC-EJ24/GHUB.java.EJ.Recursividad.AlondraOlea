@@ -46,4 +46,16 @@ public class AppFibonacci {
     static long getContador(){
         return cont;
     }
+    static double fibonacciRecOptimizado(int x, Hashtable < Integer, Double > t){
+
+        //primero verificamos si el resultado esta en la tabla 
+        Double d = t.get(x);
+        // si no estaba entonces lo calculamos y lo ingresamos a la tabla
+        if(d == null){
+            d = fibonacciRecOptimizado(x-1, t) + fibonacciRecOptimizado(x-2, t);
+            t.put(x, d);
+        }
+        //retornamos el resultado
+        return d;
+    }
 }
